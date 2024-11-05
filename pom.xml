@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>simplewebApp03</groupId>
+  <artifactId>com.sp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Simple Web App 03</name>
+  
+  <dependencies>
+	
+	<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>servlet-api</artifactId>
+		    <version>2.5</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-web</artifactId>
+		    <version>3.2.1</version>
+		    <exclusions>
+		        <exclusion>
+		            <groupId>ch.qos.logback</groupId>
+		            <artifactId>logback-classic</artifactId>
+		        </exclusion>
+    		</exclusions>
+		</dependency>
+	  	
+	  	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-test</artifactId>
+		    <version>3.2.1</version>
+		    <scope>test</scope>
+		</dependency>
+	  	
+  </dependencies>
+  
+  <properties>
+		<java.version>23</java.version>		
+	</properties>
+
+	<build>
+		<finalName>simplewebApp03</finalName>
+	</build>
+  
+</project>
